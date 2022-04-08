@@ -110,6 +110,7 @@ th {
 table {
   width: 100%;
   height: 2rem;
+  border: 2px solid black;
 }
 
 td {
@@ -117,6 +118,9 @@ td {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: rgb(200, 200, 200);
-  color: #fff;
+  background-color: #EEEEEE;
+}
+
+thead {
+  background-color: #CCCCCC;
 }
