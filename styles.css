@@ -88,13 +88,16 @@ body {
 }
 
 .weekday-box {
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 3px solid black;
-  width: 6rem;
-  height: 5rem;
+  width: 7rem;
+  height: 6rem;
   margin: 0 25px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .weekday-box:hover {
@@ -118,9 +121,9 @@ td {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #EEEEEE;
+  background-color: #eee;
 }
 
 thead {
-  background-color: #CCCCCC;
+  background-color: #ccc;
 }

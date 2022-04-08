@@ -2,8 +2,10 @@ var entryButton = document.querySelector('.button1');
 var $modal = document.querySelector('.modal');
 var submitButton = document.querySelector('.button2');
 var $background = document.querySelector('.background');
-var $weekdayBox = document.querySelector('.weekday-box');
+var $weekdayBox = document.querySelector('#weekdays');
 var $schedule = document.querySelector('.schedule');
+
+console.log('yep:', $schedule.textContent);
 
 entryButton.addEventListener('click', showModal);
 submitButton.addEventListener('click', showModal);
@@ -26,14 +28,13 @@ function showModal() {
 function showView(e) {
   for (var i = 0; i < $weekdayBox.length; i++) {
     console.log([i].getAttribute('id'));
-    if ([i].getAttribute('id') === e) {
-      $schedule.textContent = 'Scheduled events for' + e;
+    if (e.path[0].getAttribute('id') === 'sunday') {
+      $schedule.textContent = 'Scheduled events for ' + e.path[0].getAttribute('id');
+      console.log('true');
     }
   }
-  console.log(e);
-  console.log(e.target);
-  console.log(e.path[0]);
   console.log(e.path[0].getAttribute('id'));
+  console.log('yep:', $schedule.textContent);
 
 }
 
