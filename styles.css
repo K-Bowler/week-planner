@@ -1,10 +1,28 @@
 * {
-  font-family: 'Comic Neue', sans-serif;
+  font-family: "Comic Neue", sans-serif;
 }
 
 .button1 {
   padding: 10px 50px;
-  background-color: #95BCF2;
+  background-color: #95bcf2;
   box-shadow: 4px 4px 2px black;
   border: 2px solid black;
+  margin-top: 100%;
+}
+
+.button1:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.center-row {
+  justify-content: center;
 }
