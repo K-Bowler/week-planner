@@ -15,7 +15,7 @@ body {
   background-color: #95bcf2;
   box-shadow: 4px 4px 2px black;
   border: 2px solid black;
-  margin-top: 30%;
+  margin-top: 5%;
 }
 
 .button1:hover {
@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   z-index: 1;
 }
@@ -36,6 +36,10 @@ body {
   width: 100%;
 }
 
+.column-seventh {
+  flex-basis: calc(100% / 7);
+}
+
 .center-row {
   text-align: center;
 }
@@ -45,7 +49,7 @@ body {
   background-color: white;
   position: absolute;
   top: 12rem;
-  left: 27%;
+  left: 33%;
 }
 
 .modal-bg-on {
@@ -80,4 +84,14 @@ body {
 
 .entry-h1 {
   margin-top: 5px;
+}
+
+.weekday-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  width: 6rem;
+  height: 5rem;
+  margin: 0 25px;
 }
