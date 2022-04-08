@@ -12,7 +12,7 @@ body {
 
 .button1 {
   padding: 10px 50px;
-  background-color: #95bcf2;
+  background-color: white;
   box-shadow: 4px 4px 2px black;
   border: 2px solid black;
   margin-top: 5%;
@@ -20,6 +20,7 @@ body {
 
 .button1:hover {
   cursor: pointer;
+  background-color: #95bcf2;
 }
 
 .container {
@@ -94,6 +95,11 @@ body {
   width: 6rem;
   height: 5rem;
   margin: 0 25px;
+}
+
+.weekday-box:hover {
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
 }
 
 table,
