@@ -11,21 +11,55 @@
 </head>
 <body>
   <div class="container">
-    <div class="row center-row">
-      <div class="modal-bg">
-        <div class="column-full">
+    <div class="modal-bg">
+      <div class="row">
+        <div class="column-full center-row">
           <h1>Weekly Planner</h1>
         </div>
       </div>
-    </div>
-    <div class="row center-row">
-      <div class="column-full">
-        <button class="button1">Add Entry</button>
+      <div class="row">
+        <div class="column-full center-row">
+          <button class="button1">Add Entry</button>
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="modal">
-        <div class="column-full"></div>
+      <div class="column-full">
+        <div class="modal">
+          <form>
+            <div class="row">
+              <div class="column-full">
+                <h1>Add Entry</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column-full">
+                <select>
+                  <option value="Day of the week">Day of the week</option>
+                  <option value="Monday">Monday</option>
+                  <option value="Tuesday">Tuesday</option>
+                  <option value="Wednesday">Wednesday</option>
+                  <option value="Thursday">Thursday</option>
+                  <option value="Friday">Friday</option>
+                  <option value="Saturday">Saturday</option>
+                  <option value="Sunday">Sunday</option>
+                </select>
+                <select>
+                  <option value="Time">Time</option>
+                  <option value="12:00pm-6:00pm">12:00pm-6:00pm</option>
+                  <option value="6:00pm-12:00am">6:00pm-12:00am</option>
+                  <option value="12:00am-6am">12:00am-6:00am</option>
+                  <option value="6:00am-12:00pm">6:00am-12:00pm</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column-full">
+                <textarea rows="6" cols="10"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 

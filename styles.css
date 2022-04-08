@@ -7,7 +7,7 @@
   background-color: #95bcf2;
   box-shadow: 4px 4px 2px black;
   border: 2px solid black;
-  margin-top: 100%;
+  margin-top: 30%;
 }
 
 .button1:hover {
@@ -23,6 +23,14 @@
   display: flex;
 }
 
+.column-full {
+  width: 100%;
+}
+
 .center-row {
-  justify-content: center;
+  text-align: center;
+}
+
+.modal {
+  border: 2px solid black;
 }
