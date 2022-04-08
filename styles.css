@@ -33,4 +33,11 @@
 
 .modal {
   border: 2px solid black;
+  max-width: ;
+}
+
+.form-modal {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
 }
