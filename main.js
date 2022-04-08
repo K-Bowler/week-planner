@@ -20,3 +20,45 @@ function showModal() {
     $background.classList.remove('modal-bg-on');
   }
 }
+
+// <tr>
+//   <td>10:00</td>
+//   <td>Practice algorithms</td>
+// </tr>
+// <tr>
+//   <td>12:00</td>
+//   <td>Go For A Run</td>
+// </tr>
+// <tr>
+//   <td></td>
+//   <td></td>
+// </tr>
+// <tr>
+//   <td></td>
+//   <td></td>
+// </tr>
+// <tr>
+//   <td></td>
+//   <td></td>
+// </tr>
+// <tr>
+//   <td></td>
+//   <td></td>
+// </tr>
+// <tr>
+//   <td></td>
+//   <td></td>
+// </tr>
+// <tr>
+//   <td></td>
+//   <td></td>
+// </tr>
+
+var $entryForm = document.querySelector('form');
+
+$entryForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  console.log(e);
+  console.log(e.target);
+
+});
