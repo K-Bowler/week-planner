@@ -10,5 +10,13 @@ console.log('background:', $background);
 entryButton.addEventListener('click', showModal);
 
 function showModal(e) {
-  console.log('e:', e);
+  console.log(e);
+  console.log(e.target);
+  console.log($modal.classList);
+
+  if ($modal.className === 'modal hidden') {
+    $modal.classList.remove('hidden');
+  } else {
+    $modal.classList.add('hidden');
+  }
 }
