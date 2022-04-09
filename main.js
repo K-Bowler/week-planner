@@ -26,15 +26,10 @@ function showModal() {
 }
 
 function showView(e) {
-  for (var i = 0; i < $weekdayBox.length; i++) {
-    console.log([i].getAttribute('id'));
-    if (e.path[0].getAttribute('id') === 'sunday') {
-      $schedule.textContent = 'Scheduled events for ' + e.path[0].getAttribute('id');
+    if (e.path[0].textContent === e.target.textContent) {
+      $schedule.textContent = 'Scheduled events for ' + e.path[0].textContent;
       console.log('true');
     }
-  }
-  console.log(e.path[0].getAttribute('id'));
-  console.log('yep:', $schedule.textContent);
 
 }
 
