@@ -25,54 +25,16 @@ function showModal() {
   }
 }
 
+$weekdayBox.addEventListener('click', showView);
 function showView(e) {
-    if (e.path[0].textContent === e.target.textContent) {
-      $schedule.textContent = 'Scheduled events for ' + e.path[0].textContent;
-      console.log('true');
-    }
+  if (e.path[0].textContent === e.target.textContent) {
+    $schedule.textContent = 'Scheduled events for ' + e.path[0].textContent;
+  }
 
 }
 
-$weekdayBox.addEventListener('click', showView);
+var $form = document.querySelector('#form');
 
-// <tr>
-//   <td>10:00</td>
-//   <td>Practice algorithms</td>
-// </tr>
-// <tr>
-//   <td>12:00</td>
-//   <td>Go For A Run</td>
-// </tr>
-// <tr>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td></td>
-//   <td></td>
-// </tr>
-
-var $entryForm = document.querySelector('form');
-
-$entryForm.addEventListener('submit', function (e) {
-  e.preventDefault();
-  console.log(e);
-  console.log(e.target);
+$form.addEventListener('submit', function (e) {
 
 });
